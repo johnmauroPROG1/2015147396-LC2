@@ -1,0 +1,75 @@
+﻿@model _2015104916.Entities.Entities.Carro
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Carro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ensambladora.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ensambladora.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parabrisas.NumSerie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parabrisas.NumSerie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Propietario.Dni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Propietario.Dni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Volante.NumSerie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Volante.NumSerie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSerieMotor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSerieMotor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSerieChasis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSerieChasis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoCarro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoCarro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idCarro }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
